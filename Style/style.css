@@ -7,6 +7,7 @@ body {
 
 }
 
+/* 
 @media only screen and (max-width: 600px) {
     body {
         padding: 0px 10px;
@@ -31,6 +32,7 @@ body {
     }
 }
 
+*/
 .heilight {
     color: rgba(244, 144, 26, 1);
 }
@@ -65,6 +67,7 @@ body {
     background-image: url("../Images/img/Group 107.png");
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 20% 135px;
 }
 
 .BannerHeading {
@@ -79,7 +82,7 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    padding: 12% 135px;
+
 }
 
 .primaryBtn {
@@ -206,7 +209,7 @@ body {
 }
 
 /*--------------------------------------------------
-                Services Section 
+                                                                                                 What we do Section
 ----------------------------------------------------*/
 .servicesSection {
     /* background-color: #107e4c; */
@@ -239,10 +242,10 @@ body {
     /* margin-bottom: 60px; */
 }
 
-.servicesDevider {
-    padding-top: 74px;
-    padding-bottom: 100px;
-    color: #F4901A;
+.devider {
+    margin-top: 74px;
+    margin-bottom: 100px;
+    background-color: #F4901A;
 }
 
 
@@ -395,9 +398,59 @@ body {
 }
 
 
-/*--------------------------------------------------
-                 What we do Section
-----------------------------------------------------*/
+/*---------------------------------------
+                 Cirle Service list
+ ----------------------------------------- */
+
+.cirleServiceContainer {
+    padding: 0px 135px;
+    background-image: url("../Images/img/Group 98.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.firstSquare {
+    margin-bottom: 20%;
+}
+
+.fcard {
+    margin-top: 15%;
+    margin-bottom: 14%;
+}
+.lcard{
+margin-top: 14%;
+}
+.squareCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.circleServiceCard {
+    background-color: rgba(3, 6, 17, 1);
+    padding: 37px 30px;
+}
+
+.circleServiceCard>img {
+    color: #F4901A !important;
+}
+
+.circleServiceCard>h5 {
+    Font-family: "Advent Pro";
+    Font-style: Bold;
+    Font-size: 24px;
+    Line-height: 31px;
+    margin-top: 15px;
+
+}
+
+.circleServiceCard>p {
+    Font-family: "Quicksand";
+    Font-style: Bold;
+    Font-size: 18px;
+    Line-height: 26px;
+}
 
 /*--------------------------------------------------
                  Portfolio Section
