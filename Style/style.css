@@ -417,14 +417,15 @@ body {
     margin-top: 15%;
     margin-bottom: 14%;
 }
-.lcard{
-margin-top: 14%;
+
+.lcard {
+    margin-top: 14%;
 }
+
 .squareCard {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .circleServiceCard {
