@@ -38,8 +38,7 @@ body {
 }
 
 /*--------------------------------------------------
-                                                                        Header Section 
-                                                        ----------------------------------------------------*/
+                          Header Section ----------------------------------------------------*/
 .navbar {
     padding: 0px 135px;
 }
@@ -49,6 +48,8 @@ body {
     Font-style: Bold;
     Font-size: 24px;
     Line-height: 24px;
+    padding-top: 16px;
+    padding-bottom: 8px;
 }
 
 .nav-item {
@@ -58,16 +59,37 @@ body {
     Line-height: 19px;
 }
 
+@media only screen and (min-device-width: 600px) and (max-device-width: 778px) {
+    .navbar {
+        padding: 0px 50px;
+    }
+}
+
+@media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
+    .navbar {
+        padding: 0px 70px;
+    }
+}
+
+@media only screen and (min-device-width: 1035px) and (max-device-width: 1480px) {
+    .navbar {
+        padding: 0px 110px;
+    }
+}
+
 /*--------------------------------------------------
                 Banner Section 
 ----------------------------------------------------*/
 
 .bannerContainer {
     text-align: start;
-    background-image: url("../Images/img/Group 107.png");
+    /* background-image: url("../Images/img/customBannerImg.svg"); */
+    background-image: url("../Images/img/bannerImg.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20% 135px;
+    padding: 30% 135px;
+    position: relative;
+    /* background: linear-gradient(121.75deg, #040613 26.68%, rgba(4, 6, 19, 0) 67.31%); */
 }
 
 .BannerHeading {
@@ -82,7 +104,16 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-
+    position: absolute;
+    background: rgb(14, 14, 14);
+    background: linear-gradient(121.75deg, #040613 26.68%, rgba(4, 6, 19, 0) 67.31%);
+    /* background-image: linear-gradient(red, yellow); */
+    padding: 20% 7.5%;
+    top: 0%;
+    left: 0%;
+    bottom: 50% !important;
+    width: 100%;
+    height: 100%;
 }
 
 .primaryBtn {
@@ -138,6 +169,7 @@ body {
 @media only screen and (min-device-width: 600px) and (max-device-width: 778px) {
     .bannerContainer {
         padding-bottom: 12% !important;
+        padding: 50% 50px;
     }
 
     .BannerHeading {
@@ -147,9 +179,12 @@ body {
     }
 
     .bannerContent {
-        margin-top: 5%;
+        /* margin-top: 5%; */
         font-size: 18px;
         line-height: 32px;
+        padding: 6% 6%;
+        width: 100%;
+        height: 100%;
     }
 
     .primaryBtn {
@@ -165,6 +200,7 @@ body {
 @media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
     .bannerContainer {
         padding-bottom: 10% !important;
+        padding: 50% 70px;
     }
 
     .BannerHeading {
@@ -174,9 +210,12 @@ body {
     }
 
     .bannerContent {
-        margin-top: 5%;
+        /* margin-top: 5%; */
         font-size: 18px;
         line-height: 32px;
+        padding: 10% 7%;
+        width: 100%;
+        height: 100%;
     }
 
     .primaryBtn {
@@ -191,7 +230,7 @@ body {
 
 @media only screen and (min-device-width: 1035px) and (max-device-width: 1480px) {
     .bannerContainer {
-        padding: 0px 110px !important;
+        padding: 50% 110px;
         padding-bottom: 8% !important;
     }
 
@@ -202,18 +241,22 @@ body {
     }
 
     .bannerContent {
-        margin-top: 5%;
         font-size: 24px;
         line-height: 32px;
+        padding: 10% 7%;
+        width: 100%;
+        height: 100%;
     }
 }
 
 /*--------------------------------------------------
-                                                                                                 What we do Section
+                                                                                                                                                                                                                                                                  What we do Section
 ----------------------------------------------------*/
 .servicesSection {
     /* background-color: #107e4c; */
     padding: 0px 135px;
+    background-image: url("../Images/img/Frame 12 (1).png");
+    background-repeat: no-repeat;
 }
 
 .servicesHeadingSection {
@@ -254,6 +297,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 40px;
     column-gap: 40px;
+    padding-bottom: 5%;
 }
 
 .cardSection {
@@ -406,7 +450,10 @@ body {
     padding: 0px 135px;
     background-image: url("../Images/img/Group 98.png");
     background-repeat: no-repeat;
+    /* background-size: cover; */
     background-size: cover;
+    /* height: 210vh;
+                                                    width: 98vw; */
 }
 
 .firstSquare {
@@ -429,8 +476,10 @@ body {
 }
 
 .circleServiceCard {
+    border-radius: 12px;
     background-color: rgba(3, 6, 17, 1);
     padding: 37px 30px;
+    border-top: 1px solid orange;
 }
 
 .circleServiceCard>img {
@@ -460,6 +509,9 @@ body {
 
 .portfolioContainer {
     padding: 0px 135px;
+    background-image: url("../Images/img/Rectangle\ 46.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .portfolioCardContainer {
@@ -485,18 +537,64 @@ body {
     margin-top: 20px;
 }
 
+/*  */
+
+.portfoliCard {
+    position: relative;
+    width: 80%;
+    height: 88%;
+}
+
+.portfolioImg {
+    width: 100%;
+    height: auto;
+}
+
+.portfoliCard:hover .portfolioImg {
+    opacity: .25;
+    background-color: #F4901A;
+}
+
+.portfoliCard .overlay {
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    background-color: rgba(244, 144, 26, 0.8);
+    /*Orange color with 80% opacity*/
+}
+
+.portfoliCard:hover .overlay {
+    opacity: 1;
+}
+
+.portfoliCard .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
 
 /*--------------------------------------------------
                 Pricing  Section 
 ----------------------------------------------------*/
 .priceContainer {
     padding: 0px 135px;
+    background-image: url("../Images/img/Frame 13.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .priceCardSection {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    padding-bottom: 4%;
 }
 
 .priceCard {
@@ -504,10 +602,11 @@ body {
     height: 566px; */
     width: 500px;
     height: 586px;
-    border: 1px solid orange;
+    background-color: #030611;
     /* padding: 45px 12px; */
     padding: 65px 24px;
     clip-path: polygon(66% 0, 78% 10%, 100% 10%, 100% 70%, 100% 100%, 0 100%, 0 0, 47% 0);
+    border: 1px solid orange;
 }
 
 .priceBtn {
@@ -635,6 +734,16 @@ body {
     }
 }
 
+@media only screen and (min-device-width: 1034px) and (max-device-width: 1450px) {
+
+    .priceCard {
+        width: 95%;
+        height: 100%;
+        border: 1px solid orange;
+        padding: 10px 10px;
+    }
+}
+
 /*--------------------------------------------------
                 Who We Section 
 ----------------------------------------------------*/
@@ -646,7 +755,10 @@ body {
     justify-content: space-between !important;
     background-image: url("../Images/img/Rectangle 47.png");
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    /* height: 100vh;
+    width: 98vw; */
 }
 
 .aboutHeading {
@@ -703,7 +815,7 @@ body {
 
 
     .aboutContentContainer {
-        padding: 7% 5%;
+        padding: 7% 10px;
     }
 }
 
@@ -715,6 +827,10 @@ body {
         column-gap: 2rem;
         justify-content: center;
         align-items: center;
+    }
+
+    .aboutImg {
+        width: 90%;
     }
 
     .aboutHeading {
@@ -739,7 +855,9 @@ body {
         justify-content: center;
         align-items: center;
     }
-
+.aboutImg {
+        width: 95%;
+    }
     .aboutHeading {
         font-size: 42px;
         line-height: 48px;
@@ -823,10 +941,12 @@ body {
     line-height: 28px;
     margin-bottom: 16px;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .links>ul>li {
     list-style: none;
+
 }
 
 .links>p {
@@ -835,6 +955,7 @@ body {
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
+    padding-left: 25%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -861,16 +982,34 @@ body {
     .footerContainer {
         padding: 0px 50px !important;
     }
+
+    .footerLinks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5%;
+    }
 }
 
 @media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
     .footerContainer {
         padding: 0px 80px !important;
     }
+
+    .footerLinks {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 5%;
+    }
 }
 
 @media only screen and (min-device-width: 1034px) and (max-device-width: 1450px) {
     .footerContainer {
         padding: 0px 110px !important;
+    }
+
+    .footerLinks {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10%;
     }
 }
