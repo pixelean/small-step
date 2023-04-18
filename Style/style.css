@@ -64,6 +64,20 @@ html {
     Line-height: 19px;
 }
 
+.nav-link {
+    color: #FFFFFF !important;
+}
+
+.nav-link:hover {
+    color: orange !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        padding: 0px 10px;
+    }
+}
+
 @media only screen and (min-device-width: 600px) and (max-device-width: 778px) {
     .navbar {
         padding: 0px 50px;
@@ -256,7 +270,7 @@ html {
     }
 }
 
-/*--------------------------------------------------                                                                                                                       What we do Section
+/*--------------------------------------------------                                                                                   What we do Section
 ----------------------------------------------------*/
 .servicesSection {
     /* background-color: #107e4c; */
@@ -384,6 +398,14 @@ html {
         gap: 40px;
     }
 
+    .outSide {
+        width: 100% !important;
+        height: 314px !important;
+        background-color: orange;
+        border-radius: 32px !important;
+        clip-path: polygon(79% 7%, 98% 7%, 98% 50%, 98% 100%, 0 100%, 0 0, 68% 0);
+    }
+
     .servicesCard {
         width: 98% !important;
         height: 100% !important;
@@ -391,19 +413,20 @@ html {
     }
 
     .servicesHeading {
-        font-size: 42px;
-        line-height: 48px;
+        font-size: 32px;
         margin-top: 54px;
+        width: 100%;
     }
 
     .servicesSubHeading {
-        margin-bottom: 40px;
+        margin-bottom: 10px;
+        width: 100%;
     }
 }
 
 @media only screen and (min-device-width: 600px) and (max-device-width: 778px) {
     .servicesSection {
-        padding: 70px 50px;
+        padding: 20px 50px;
     }
 
     .servicesCardContainer {
@@ -415,13 +438,29 @@ html {
     .servicesHeading {
         font-size: 36px;
         line-height: 42px;
+    }
 
+    .outSide {
+        width: 95% !important;
     }
 
     .servicesCard {
-        width: 98% !important;
+        width: 100% !important;
         height: 100% !important;
         padding: 15px 20px;
+    }
+
+    .servicesHeadingSection {
+        padding-top: 0px;
+    }
+
+    .servicesHeading {
+        font-size: 32px;
+    }
+
+    .servicesSubHeading {
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 
@@ -637,11 +676,11 @@ html {
     margin-top: 20px;
 }
 
-/*  */
+
 
 .portfoliCard {
     position: relative;
-    width: 80%;
+    width: 86%;
     height: 88%;
 }
 
@@ -694,6 +733,58 @@ html {
     .portfoliCard {
         width: 100%;
         height: 80%;
+    }
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 778px) {
+    .portfolioContainer {
+        padding: 0px 50px;
+    }
+
+    .portfoliCard {
+        position: relative;
+        width: 90% !important;
+        height: 70%;
+    }
+
+    .portfolioImg {
+        width: 100%;
+        height: 100% !important;
+    }
+
+}
+
+@media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
+    .portfolioContainer {
+        padding: 0px 80px;
+    }
+
+    .portfoliCard {
+        position: relative;
+        width: 86%;
+        height: 77%;
+    }
+
+    .portfolioImg {
+        width: 100%;
+        height: auto !important;
+    }
+}
+
+@media only screen and (min-device-width: 1034px) and (max-device-width: 1450px) {
+    .portfolioContainer {
+        padding: 0px 110px;
+    }
+
+    .portfoliCard {
+        position: relative;
+        width: 86%;
+        height: 83.3%;
+    }
+
+    .portfolioImg {
+        width: 100%;
+        height: auto !important;
     }
 }
 
