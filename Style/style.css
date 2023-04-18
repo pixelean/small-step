@@ -1,6 +1,6 @@
 body {
     /* background-image: linear-gradient(180deg, rgba(3, 6, 17, 0) 0%, #030611 8.71%, #030611 100%); */
-    background-color: #0E0F17;
+    background-color: #030611;
     color: white !important;
     /* padding: 0px 135px; */
     font-family: 'Quicksand', 'Advent Pro';
@@ -112,6 +112,8 @@ html {
     position: absolute;
     background: rgb(3, 6, 17);
     background: linear-gradient(360deg, rgba(3, 6, 17, 1) 0%, rgba(3, 6, 17, 1) 13%, rgba(3, 6, 17, 0) 23%, rgba(3, 6, 17, 0) 90%);
+
+
     /* background-image: linear-gradient(red, yellow); */
     padding: 20% 7.5%;
     top: 0%;
@@ -310,18 +312,31 @@ html {
     justify-content: center;
 }
 
+.outSide {
+    width: 500px !important;
+    height: 314px !important;
+    /* background-color: orange; */
+    /* border: 10px solid orange; */
+    background-color: orange;
+    border-radius: 12px;
+    -webkit-clip-path: polygon(100% 7%, 100% 23%, 100% 100%, 0 100%, 0 0, 69% 0, 80% 7%);
+    clip-path: polygon(100% 7%, 100% 23%, 100% 100%, 0 100%, 0 0, 69% 0, 80% 7%);
+}
+
 .servicesCard {
-    background-color: rgba(37, 34, 37, 0.1);
-    /* background-color: white; */
+    /* background-color: rgba(37, 34, 37, 0.1); */
+    background-color: #0C0D16;
     border-radius: 12px;
     color: white;
     width: 500px !important;
     height: 314px !important;
     padding: 46px 38px 46px 28px;
-    border: 1px solid orange !important;
-    clip-path: polygon(66% 0, 78% 10%, 100% 10%, 100% 70%, 100% 100%, 0 100%, 0 0, 47% 0);
+    border: 3px solid orange !important;
+    -webkit-clip-path: polygon(100% 8%, 100% 23%, 100% 100%, 0 100%, 0 0, 67% 0, 80% 8%);
+    clip-path: polygon(100% 8%, 100% 23%, 100% 100%, 0 100%, 0 0, 67% 0, 80% 8%);
 
 }
+
 
 .servicesCard:hover {
     /* border: 1px solid #1CB26E; */
@@ -454,9 +469,9 @@ html {
 .cirleServiceContainer {
     padding: 0px 135px;
     background-image: url("../Images/img/Group 115.svg");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
-    /* width: 99vw; */
+    width: 99vw;
 }
 
 .cardMainContainer {
@@ -501,18 +516,56 @@ html {
     Line-height: 26px;
 }
 
+.lastCol {
+    padding-left: 10%;
+}
+
+.astronaut {
+    padding-top: 40%;
+    padding-bottom: 40%;
+}
+
+.first1 {
+    padding-top: 30%;
+}
+
+.first2 {
+    padding-top: 30%;
+}
+
+.third1 {
+    padding-top: 40%;
+}
+
+.third2 {
+    padding-top: 40%;
+}
+
+.borderLayout {
+    border: 3px dashed rgba(217, 217, 217, 0.3);
+    border-radius: 50%;
+
+}
+
 @media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
 
     .cirleServiceContainer {
         padding: 0px 50px;
         height: 135vh;
         width: 99vw;
+        background-image: url("../Images/img/Group 115.svg");
+        background-size: cover;
     }
 
     .circleServiceCard {
-        Width: 32%;
-        Height: 15% !important;
+        Width: 90% !important;
+        Height: 20% !important;
         padding: 20px 20px;
+    }
+
+    .astronaut {
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
 
     .circleServiceCard>h5 {
@@ -527,18 +580,7 @@ html {
         Line-height: 21px;
     }
 
-    .fcard {
-        margin-top: 0%;
-        margin-bottom: 8%;
-    }
 
-    .firstSquare {
-        margin-bottom: 5%;
-    }
-
-    .lcard {
-        margin-top: 8%;
-    }
 }
 
 @media only screen and (min-device-width: 1035px) and (max-device-width: 1450px) {
@@ -576,7 +618,6 @@ html {
 .portfolioCardContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
 }
 
 .portfoliCard>img {
