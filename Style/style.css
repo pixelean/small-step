@@ -485,6 +485,10 @@ html {
         border-radius: 30px;
     }
 
+    .servicesHeadingSection {
+        padding-top: 0px;
+    }
+
     .servicesCard {
         width: 98% !important;
         height: 100% !important;
@@ -643,7 +647,37 @@ html {
         Line-height: 21px;
     }
 
+    .borderLayout {
+        border: 3px dashed rgba(217, 217, 217, 0.3);
+        border-radius: 50%;
+       
+    }
 
+    .astronaut {
+        padding-top: 10%;
+        padding-bottom: 10%;
+
+    }
+
+    .first1 {
+        padding-top: 0%;
+    }
+
+    .first2 {
+        padding-top: 10%;
+    }
+
+    .third1 {
+        padding-top: 0%;
+    }
+
+    .third2 {
+        padding-top: 15%;
+    }
+
+    .lastCol {
+        padding-left: 2%;
+    }
 }
 
 @media only screen and (min-device-width: 1035px) and (max-device-width: 1450px) {
