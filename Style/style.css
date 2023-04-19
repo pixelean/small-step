@@ -624,15 +624,16 @@ html {
     position: absolute;
 
 }
-.middleSection{
-padding-left: 4%;
+
+.middleSection {
+    padding-left: 4%;
 }
 
 @media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
 
     .cirleServiceContainer {
         padding: 0px 50px;
-    background-position: 25% 13%;
+        background-position: 25% 13%;
     }
 
     .circleServiceCard {
@@ -642,8 +643,8 @@ padding-left: 4%;
     }
 
     .astronaut {
-        padding-top: 35% !important;
-        padding-bottom: 35% !important;
+        padding-top: 40% !important;
+        padding-bottom: 40% !important;
     }
 
     .astronaut img {
@@ -651,21 +652,15 @@ padding-left: 4%;
     }
 
     .circleServiceCard>h5 {
-        Font-size: 19px;
+        Font-size: 18px;
         Line-height: 31px;
         margin-top: 10px;
 
     }
 
     .circleServiceCard>p {
-        Font-size: 16px;
+        Font-size: 14px;
         Line-height: 21px;
-    }
-
-    .borderLayout {
-        border: 3px dashed rgba(217, 217, 217, 0.3);
-        border-radius: 50%;
-
     }
 
     .astronaut {
@@ -693,9 +688,10 @@ padding-left: 4%;
     .lastCol {
         padding-left: 2%;
     }
-.middleSection{
-padding: 0% auto;
-}
+
+    .middleSection {
+        padding: 0% auto;
+    }
 
     .borderLayout {
         height: 73%;
@@ -712,19 +708,56 @@ padding: 0% auto;
 @media only screen and (min-device-width: 1035px) and (max-device-width: 1450px) {
     .cirleServiceContainer {
         padding: 0px 80px;
+        background-position: 25% 13% !important;
     }
 
-    .fcard {
-        margin-top: 10%;
-        margin-bottom: 14%;
+    .circleServiceCard {
+        Width: 90% !important;
+        Height: 65% !important;
+        padding: 20px 20px;
     }
 
-    .firstSquare {
-        margin-bottom: 12%;
+    .astronaut {
+        padding-top: 55%;
+        padding-bottom: 50%;
+
     }
 
-    .lcard {
-        margin-top: 10%;
+    .astronaut img {
+        width: 80%;
+    }
+
+    .first1 {
+        padding-top: 20%;
+    }
+
+    .first2 {
+        padding-top: 20%;
+    }
+
+    .third1 {
+        padding-top: 20%;
+    }
+
+    .third2 {
+        padding-top: 20%;
+    }
+
+    .lastCol {
+        padding-left: 2%;
+    }
+
+    .middleSection {
+        padding: 0% auto;
+    }
+
+    .borderLayout {
+        height: 72%;
+        width: 75%;
+
+        top: 21%;
+        left: 12%;
+        right: 10%;
     }
 
 }
